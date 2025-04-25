@@ -5,3 +5,21 @@
 .divs-facilities {
     width: 325px;
 }
+
+.btn-lilac {
+    background-color: #9353FF;
+}
+
+.lime-green {
+    color: #DAFF01;
+}
+
+.position {
+    top: 40%;
+}
+
+@media(max-width: 767px) {
+    .position {
+        top: 60%;
+    }
+}
