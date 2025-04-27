@@ -1,9 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
+
+body {
+    font-family: "Inter", sans-serif;
+}
+
+.container-fluid {
+    padding: 0 1.438rem;
+}
+
+.hero__caption {
+    font-size: 1.25rem;
+
+    @media(max-width: 350px) {
+        font-size: 1rem;
+    }
+}
+
 .text-small {
     font-size: 0.813rem;
 }
 
 .divs-facilities {
-    width: 325px;
+    max-width: 325px;
+
+    @media (min-width: 362px) {
+        width: 325px;
+    }
 }
 
 .btn-lilac {
@@ -14,12 +36,128 @@
     color: #DAFF01;
 }
 
-.position {
-    top: 40%;
+.facilities__icon {
+    font-size: 56px;
 }
 
-@media(max-width: 767px) {
-    .position {
+.position {
+    top: 40%;
+
+    @media(max-width: 767px) {
         top: 60%;
+    }
+
+    @media(max-width: 413px) {
+        top: 48%;
+    }
+}
+
+.categories__title {
+    margin: 2.188rem 0 1.5rem;
+}
+
+.trending-products__title {
+    margin: 2.188rem 0 1.875rem;
+}
+
+.card-title {
+    margin-bottom: 13px;
+}
+
+.card-text {
+    font-size: 0.813rem;
+}
+
+.card-price {
+    font-weight: bold;
+    font-size: 1rem;
+    margin: auto 0 0 0;
+}
+
+.card-btn {
+    margin-top: 0.625rem;
+}
+
+.facilities {
+    margin-top: 2.188rem;
+}
+
+.facilities__container {
+    padding: 2rem 1.625rem;
+}
+
+.facilities__title {
+    margin-bottom: 2rem;
+}
+
+.facilities__list {
+    gap: 2rem;
+}
+
+.newsletter {
+    padding: 4.688rem 1.656rem;
+}
+
+.newsletter__form {
+    width: clamp(321px, 85.6vw, 729px);
+}
+
+.newsletter__title {
+    font-size: 1rem;
+}
+
+.footer {
+    padding: 1.063rem;
+}
+
+.footer__text {
+    font-size: 0.813rem;
+}
+
+@media screen and (min-width: 768px) {
+    .categories__title {
+        margin: 2.563rem 0 2rem 0;
+    }
+
+    .trending-products__title {
+        margin: 2.823rem 0 2rem;
+    }
+
+    .facilities {
+        margin-top: 3.313rem;
+    }
+
+    .facilities__container {
+        padding: 2.5rem;
+    }
+
+    .newsletter {
+        padding: 2.5rem;
+    }
+
+    .newsletter__title {
+        font-size: 1.25rem;
+    }
+
+    .facilities__icon {
+        font-size: 72px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .categories__title {
+        margin-top: 4.5rem;
+    }
+
+    .trending-products__title {
+        margin: 3rem 0 1.875rem;
+    }
+
+    .facilities {
+        margin-top: 5.25rem;
+    }
+
+    .newsletter {
+        padding: 4.063rem 0;
     }
 }
